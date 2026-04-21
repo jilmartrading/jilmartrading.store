@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- viewport meta already included above -->
+  <title>Gallery - Jilmar Trading</title>
+  <link rel="icon" type="image/x-icon" href="images/jilmar_logo.ico">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" 
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive-nav.css">
+
+<head>
+  <style>
+    /* Flex container for product grids */
+    .d-flex {
+      display: flex;
+      flex-wrap: wrap;          /* wrap items on smaller screens */
+      justify-content: center;  /* center items horizontally */
+      gap: 1rem;                /* spacing between items */
+    }
+
+    /* Image card styling */
+    .card {
+      width: 250px;             /* default fixed width */
+      height: 250px;            /* default fixed height */
+      object-fit: cover;        /* crop without distortion */
+      border-radius: 6px;       /* optional polish */
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15); /* optional polish */
+      max-width: 100%;          /* prevents overflow */
+    }
+
+    /* Shrink images on tablets */
+    @media (max-width: 768px) {
+      .card {
+        width: 200px;
+        height: 200px;
+      }
+    }
+
+    /* Shrink further on small phones */
+    @media (max-width: 480px) {
+      .card {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+
+
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg custom-navbar navbar-light sticky-top animated-navbar">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo2.jpg" alt="Jilmar Logo" height="40">
+      </a>
+      <a class="navbar-brand fw-bold" href="index.html">JILMAR TRADING</a>
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" title="Toggle navigation" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href= "Product.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="Brand.html">Brands</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+</head>
+<body data-bs-spy="scroll" data-bs-target="#brandIndex" data-bs-offset="100" tabindex="0">
+
+
+ <!-- Sidebar Brand Index -->
+<nav id="brandIndex" class="sidebar nav flex-column">
+  <a class="nav-link" href="#uratex">Uratex</a>
+  <a class="nav-link" href="#zoeey">Zoeey</a>
+  <a class="nav-link" href="#sunnywares">Sunnywares</a>
+  <a class="nav-link" href="#orocan">Orocan</a>
+  <a class="nav-link" href="#megabox">Megabox</a>
+  <a class="nav-link" href="#hanabishi">Hanabishi</a>
+  <a class="nav-link" href="#asahi">Asahi</a>
+  <a class="nav-link" href="#micromatic">Micromatic</a>
+  <a class="nav-link" href="#standard">Standard</a>
+  <a class="nav-link" href="#astron">Astron</a>
+  <a class="nav-link" href="#konzert">Konzert</a>
+  <a class="nav-link" href="#tosunra">Tosunra</a>
+  <a class="nav-link" href="#platinum">Platinum</a>
+  <a class="nav-link" href="#camel">Camel Appliances</a>
+  <a class="nav-link" href="#kyowa">Kyowa</a>
+</nav>
+
+<!-- Main Content -->
+<div class="content">
+  <section id="uratex" style="height:600px;">
+    <img src="https://uratex.com.ph/cdn/shop/files/Logo_ec1b20fa-d7b0-446f-a844-e5df5e0b8a03.png?v=1688476115&width=2000" 
+             class="card-img-top img-fluid p-3 brand-logo" alt="Uratex Logo">
+    <!-- Uratex -->
+<div class="col-12 ">
+  <div class="d-flex content-center gap-2 flex-wrap">
+    
+    <div>
+      <img src="https://uratex.com.ph/cdn/shop/files/AirliteCoolBlue.png?v=1760691668&width=600" class="card" alt="Uratex Foam 1">
+    </div>
+
+    <div>
+      <img src="https://uratex.com.ph/cdn/shop/products/SleepPlus_1200x1200.png?v=1773792611" class="card" alt="Uratex Foam 2">
+    </div>
+
+    <div>
+      <img src="https://uratex.com.ph/cdn/shop/files/Ecom_UratexBounceIso.jpg?v=1759908858" class="card" alt="Uratex Foam 3">
+    </div>
+
+    <div>
+      <img src="https://d1rlzxa98cyc61.cloudfront.net/catalog/product/1/3/132397.jpg?auto=webp&format=pjpg&width=640" class="card" alt="Uratex Foam 4">
+    </div>
+
+  </div>
+</div>
+  </section>
+
+  <section id="zoeey" style="height:600px;">
+    <img src="https://zooeyplastic.com/cdn/shop/files/ZooeyLogo_with_tagline_7244304e-5bb5-47ff-bdfd-1c4b7ea91979.png?v=1750698978" 
+             class="card-img-top img-fluid p-3 brand-logo" alt="Zooey Logo">
+    <!-- Zooey Durabox -->
+<div class="col-12 ">
+  <div class="d-flex content-center gap-2 flex-wrap">
+
+    <div>
+      <img src="https://zooeyplastic.com/cdn/shop/files/86.Acacia-1.jpg?v=1749844095&width=600" 
+           alt="Zooey Durabox 1" class="card">
+    </div>
+
+    <div>
+      <img src="https://zooeyplastic.com/cdn/shop/files/zooey-dura-lite-cabinet-62.Duralite-1.jpg?v=1750080941&width=480" 
+           alt="Zooey Durabox 2" class="card">
+    </div>
+
+    <div>
+      <img src="https://zooeyplastic.com/cdn/shop/files/zooey-dura-lite-cabinet-62.Duralite-2.jpg?v=1750080935&width=480" 
+           alt="Zooey Durabox 3" class="card">
+    </div>
+
+    <div>
+      <img src="https://ph-test-11.slatic.net/p/7561d84141984b2ddd36f2c1b46dce6f.jpg" 
+           alt="Zooey Durabox 4" class="card">
+    </div>
+
+  </div>
+</div>
+  </section>
+
+  <section id="sunnywares" style="height:600px;">
+    <img src="https://www.sunnywarephilippines.com/assets/data/images/structure/structure_1.png?v=2022-03-04%2019:20:36?%3E" 
+             class="card-img-top img-fluid p-3 brand-logo" alt="Sunnywares Logo">
+    <!-- Sunnywares Kitchenware -->
+<div class="col-12">
+  <div class="d-flex content-center gap-2 flex-wrap">
+
+    <div>
+      <img src="https://www.sunnywarephilippines.com/assets/data/images/product/product_1466.jpg?d=2024-06-02%2023:14:1" 
+           alt="Sunnywares Kitchenware 1" class="card">
+    </div>
+
+    <div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi89qWXRFSHhtX1a-ajI31yN3ebBb3KvhjTg&s" 
+           alt="Sunnywares Kitchenware 2" class="card">
+    </div>
+
+    <div>
+      <img src="https://img.lazcdn.com/g/p/06c799645891a5582ee321ad897884a1.jpg_960x960q80.jpg_.webp" 
+           alt="Sunnywares Kitchenware 3" class="card">
+    </div>
+
+    <div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp2GpcV0ol9mDL3bZaAw_eGWjZZzLviXH_oA&s" 
+           alt="Sunnywares Kitchenware 4" class="card">
+    </div>
+
+  </div>
+</div>
+
+  </section>
+
+  <section id="orocan" style="height:600px;">
+    <img src="https://orocan.com.ph/wp-content/uploads/2023/11/logo-6.png" 
+             class="card-img-top img-fluid p-3 brand-logo" alt="Orocan Logo">
+    <!-- Orocan Storage -->
+<div class="col-12">
+  <div class="d-flex content-center gap-2 flex-wrap">
+
+    <div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwoW0jINR5rTEu2xEJX2i6XbYRCmG6442PHw&s" 
+           alt="Orocan Storage 1" class="card">
+    </div>
+
+    <div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUd8X5iiafKVexLScgf1wC9FkwjgNYF9kpmA&s" 
+           alt="Orocan Storage 2" class="card">
+    </div>
+
+    <div>
+      <img src="https://beyondhygiene.net/wp-content/uploads/2024/06/Plastic-Pail-Orocan-2.webp" 
+           alt="Orocan Storage 3" class="card">
+    </div>
+
+    <div>
+      <img src="https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/bead91990fcb4270a70260dd83c177c6~tplv-aphluv4xwc-resize-webp:800:800.webp?dr=15584&t=555f072d&ps=933b5bde&shp=6ce186a1&shcp=e1be8f53&idc=my&from=1826719393" 
+           alt="Orocan Storage 4" class="card">
+    </div>
+
+  </div>
+</div>
+
+  </section>
+
+  <section id="megabox" style="height:600px;">
+    <img src="https://static.wixstatic.com/media/047434_e9241bd91f674507b2583d222ea9c079~mv2.png/v1/crop/x_0,y_46,w_1824,h_431/fill/w_614,h_144,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Megabox%20Logo.png" 
+             class="card-img-top img-fluid p-3 brand-logo" alt="Megabox Logo">
+    <!-- Megabox Storage -->
+<div class="col-12">
+  <div class="d-flex content-center gap-2 flex-wrap">
+
+    <div>
+      <img src="https://home.abenson.com/media/catalog/product/1/5/157813_2.jpg" 
+           alt="Megabox Storage 1" class="card">
+    </div>
+
+    <div>
+      <img src="https://smhome.ph/cdn/shop/files/IMG_2517.png?v=1759809730" 
+           alt="Megabox Storage 2" class="card">
+    </div>
+
+    <div>
+      <img src="https://shopgaisano.com/cdn/shop/products/1vNtggT26214R-NbgQhLMmzO1BaJO_SA7_w868-h1010_1024x1024.png?v=1628912669" 
+           alt="Megabox Storage 3" class="card">
+    </div>
+
+    <div>
+      <img src="https://media.pickaroo.com/media/thumb/variant_photos/2022/9/14/D57h6QVXg39Yx2dKv9XnNE_watermark_400.jpg" 
+           alt="Megabox Storage 4" class="card">
+    </div>
+
+  </div>
+</div>
+
+  </section>
+
+  <section id="hanabishi" style="height:600px;">
+    <img src="https://myhanabishi.com/cdn/shop/files/hanabishi-logo.png?v=1684984404&width=400" 
+             class="card-img-top img-fluid p-3 brand-logo" alt="Hanabishi Logo">
+    <!-- Hanabisi Rice Cooker -->
+<div class="col-12">
+  <div class="d-flex content-center gap-2 flex-wrap">
+
+    <div>
+      <img src="https://myhanabishi.com/cdn/shop/files/HEF-6_8fb55839-f840-43c2-a977-682194fee35f.jpg?v=1721620782&width=540" 
+           alt="Hanabisi Rice Cooker 1" class="card">
+    </div>
+
+    <div>
+      <img src="https://myhanabishi.com/cdn/shop/files/HAMDDREF-38INVwebsite.jpg?v=1776225213&width=360" 
+           alt="Hanabisi Rice Cooker 2" class="card">
+    </div>
+
+    <div>
+      <img src="https://myhanabishi.com/cdn/shop/files/viber_image_2026-04-15_11-07-00-563.jpg?v=1776222856&width=360" 
+           alt="Hanabisi Rice Cooker 3" class="card">
+    </div>
+
+    <div>
+      <img src="https://myhanabishi.com/cdn/shop/files/0-02-06-08f5217c8ce75a92481f814d06c959936690d71624e7f748a5570f0e95c3ba91_263f7a56d611d7fe_88485940-e1a4-4b3d-9f1a-0e6702baccf8.jpg?v=1772095353&width=360" 
+           alt="Hanabisi Rice Cooker 4" class="card">
+    </div>
+
+  </div>
+</div>
+
+  </section>
+
+  <section id="asahi" style="height:600px;">
+    <img src="https://asahiappliances.com/wp-content/uploads/2021/08/logo2.gif" 
+             class="card-img-top img-fluid p-3 brand-logo" alt="Asahi Logo">
+    <!-- Asahi Rice Cooker -->
+<div class="col-12">
+  <div class="d-flex content-center gap-2 flex-wrap">
+
+    <div>
+      <img src="https://asahiappliances.com/wp-content/uploads/2021/08/pf830blue.png" 
+           alt="Asahi Rice Cooker 1" class="card">
+    </div>
+
+    <div>
+      <img src="https://asahiappliances.com/wp-content/uploads/2025/02/TC-024-HI-RES-600x600.png" 
+           alt="Asahi Rice Cooker 2" class="card">
+    </div>
+
+    <div>
+      <img src="https://asahiappliances.com/wp-content/uploads/2021/09/elsa-front-600x600.jpg" 
+           alt="Asahi Rice Cooker 3" class="card">
+    </div>
+
+    <div>
+      <img src="https://asahiappliances.com/wp-content/uploads/2022/09/WF-629-BLK-HI-RES-600x600.jpg" 
+           alt="Asahi Rice Cooker 4" class="card">
+    </div>
+
+  </div>
+</div>
+
+  </section>
+
+  <section id="micromatic" style="height:600px;">
+    <img src="https://micromaticph.com/wp-content/uploads/2023/01/logo-small.png" 
+             class="card-img-top img-fluid p-3 brand-logo" alt="Micromatic Logo">
+    <!-- Micromatic Appliance -->
+<div class="col-12">
+  <div class="d-flex content-center gap-2 flex-wrap">
+
+    <div>
+      <img src="https://th.bing.com/th/id/OIP.Ii8ZeVLSfrPdzua82UyZnwHaHa?w=186&h=187&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" 
+           alt="Micromatic Appliance 1" class="card">
+    </div>
+
+    <div>
+      <img src="https://th.bing.com/th/id/OIP.QuJJa13lJ5Zpgal9ANI-OAHaHa?w=186&h=186&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" 
+           alt="Micromatic Appliance 2" class="card">
+    </div>
+
+    <div>
+      <img src="https://th.bing.com/th/id/OIP.9-zkU0hCC1d8zlcHcXdGMwHaHa?w=214&h=214&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" 
+           alt="Micromatic Appliance 3" class="card">
+    </div>
+
+    <div>
+      <img src="https://th.bing.com/th/id/OIP.T2oGAf4W34xKUsjCh94TIAHaHa?w=187&h=187&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" 
+           alt="Micromatic Appliance 4" class="card">
+    </div>
+
+  </div>
+</div>
+
+  </section>
+
+  <section id="standard" style="height:600px;">
+    <img src="http://standardappliances.ph/wp-content/uploads/2021/11/standard-logo-default.png" 
+             class="card-img-top img-fluid p-3 brand-logo" alt="Standard Logo">
+    <!-- Standard Rice Cooker -->
+<div class="col-12">
+  <div class="d-flex content-center gap-2 flex-wrap">
+
+    <div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO5b6Am_iNcSEi32l56L5RPQcDSWoXPHnLgA&s" 
+           alt="Standard Rice Cooker 1" class="card">
+    </div>
+
+    <div>
+      <img src="https://down-ph.img.susercontent.com/file/ph-11134207-81ztm-mf7qnyjam03u10" 
+           alt="Standard Rice Cooker 2" class="card">
+    </div>
+
+    <div>
+      <img src="https://ph-live-01.slatic.net/p/5087bd685f9cd3eca96b91f386a39620.jpg" 
+           alt="Standard Rice Cooker 3" class="card">
+    </div>
+
+    <div>
+      <img src="https://www.dmb-mktg.com/media/Home%20appliances/Standard/1.jpg" 
+           alt="Standard Rice Cooker 4" class="card">
+    </div>
+
+  </div>
+</div>
+
+  </section>
+
+  <section id="astron" style="height:600px;">
+    <img src="https://www.astron.com.ph/cdn/shop/files/Copy_of_PNG_Brand_Logo_Revitalized__Blue-Red_1176x300.png?v=1739445810" 
+             class="card-img-top img-fluid p-3 brand-logo" alt="Astron Logo">
+    <!-- Astron Gas Stove -->
+<div class="col-12">
+  <div class="d-flex content-center gap-2 flex-wrap">
+
+    <div>
+      <img src="https://www.astron.com.ph/cdn/shop/files/LED-2077_998x998.jpg?v=1754984876" 
+           alt="Astron Gas Stove 1" class="card">
+    </div>
+
+    <div>
+      <img src="https://www.astron.com.ph/cdn/shop/files/LED-1877_998x998.jpg?v=1754984877" 
+           alt="Astron Gas Stove 2" class="card">
+    </div>
+
+    <div>
+      <img src="https://www.astron.com.ph/cdn/shop/files/LED-2477_254x254.jpg?v=1754984876" 
+           alt="Astron Gas Stove 3" class="card">
+    </div>
+
+    <div>
+      <img src="https://www.astron.com.ph/cdn/shop/files/FTV-4350_254x254.jpg?v=1754984890" 
+           alt="Astron Gas Stove 4" class="card">
+    </div>
+
+  </div>
+</div>
+
+  </section>
+
+  <section id="konzert" style="height:600px;">
+    <img src="https://store.konzert.com.ph/cdn/shop/files/konzert_the_better_choice_logo_black_6955d6ec-4b4f-485a-ad74-0b20a2b6f052_900x.png?v=1743232896" 
+             class="card-img-top img-fluid p-3 brand-logo" alt="Konzert Logo">
+    <!-- Konzert Speaker -->
+<div class="col-12">
+  <div class="d-flex content-center gap-2 flex-wrap">
+
+    <div>
+      <img src="https://store.konzert.com.ph/cdn/shop/collections/kcs-322_540x.jpg?v=1679013539" 
+           alt="Konzert Speaker 1" class="card">
+    </div>
+
+    <div>
+      <img src="https://store.konzert.com.ph/cdn/shop/collections/kx-400_540x.jpg?v=1679013576" 
+           alt="Konzert Speaker 2" class="card">
+    </div>
+
+    <div>
+      <img src="https://store.konzert.com.ph/cdn/shop/collections/PA-15_540x.jpg?v=1679012597" 
+           alt="Konzert Speaker 3" class="card">
+    </div>
+
+    <div>
+      <img src="https://store.konzert.com.ph/cdn/shop/collections/SBX-2X4_540x.jpg?v=1679013510" 
+           alt="Konzert Speaker 4" class="card">
+    </div>
+
+  </div>
+</div>
+
+  </section>
+
+  <section id="tosunra" style="height:600px;">
+    <img src="https://img.ws.mms.shopee.ph/ph-11134216-7r98p-lxnc1fr0bz0k0b" 
+             class="card-img-top img-fluid p-3 brand-logo" alt="Tosunra Logo">
+    <!-- Tosunra Speaker -->
+<div class="col-12">
+  <div class="d-flex content-center gap-2 flex-wrap">
+
+    <div>
+      <img src="https://laz-img-sg.alicdn.com/p/015a117df35ed52e00b22c37ead7a4f3.jpg" 
+           alt="Tosunra Speaker 1" class="card">
+    </div>
+
+    <div>
+      <img src="https://img.lazcdn.com/g/p/d1718bf31f7e924d3da4986ee975dfac.jpg_720x720q80.jpg" 
+           alt="Tosunra Speaker 2" class="card">
+    </div>
+
+    <div>
+      <img src="https://ph-test-11.slatic.net/p/5b2e999623e39a2b1351e6b83c188b67.jpg" 
+           alt="Tosunra Speaker 3" class="card">
+    </div>
+
+    <div>
+      <img src="https://down-ph.img.susercontent.com/file/ph-11134207-7r98x-m011mhpc5gfu46" 
+           alt="Tosunra Speaker 4" class="card">
+    </div>
+
+  </div>
+</div>
+
+  </section>
+
+  <section id="platinum" style="height:600px;">
+    <img src="https://platinumkaraoke.com/cdn/shop/files/THE_PLATINUM.webp?v=1770952788&width=400" 
+             class="card-img-top img-fluid p-3 brand-logo" alt="Platinum Logo">
+    <!-- Platinum Gas Stove -->
+<div class="col-12">
+  <div class="d-flex content-center gap-2 flex-wrap">
+
+    <div>
+      <img src="https://platinumkaraoke.com/cdn/shop/files/ALPHA2_00000_514e832e-4de5-4402-a817-66cc4e8b91f0.webp?v=1772847408&width=400" 
+           alt="Platinum 1" class="card">
+    </div>
+
+    <div>
+      <img src="https://platinumkaraoke.com/cdn/shop/files/PIANO_4K1TB_00000_8623c7c0-f9a0-48ab-99cb-b28c0eab0bf1.webp?v=1772848014&width=400" 
+           alt="Platinum 2" class="card">
+    </div>
+
+    <div>
+      <img src="https://platinumkaraoke.com/cdn/shop/files/PK10_00000_fb55ca3c-c91d-4e48-b56a-ff66d4af9722.webp?v=1772848373&width=400" 
+           alt="Platinum 3" class="card">
+    </div>
+
+    <div>
+      <img src="https://platinumkaraoke.com/cdn/shop/files/PIANO_4K128GB_00000_013a0582-c140-410e-81a4-36dfbfd51689.webp?v=1772848016&width=400" 
+           alt="Platinum 4" class="card">
+    </div>
+
+  </div>
+</div>
+
+  </section>
+
+  <section id="camel" style="height:600px;">
+    <img src="https://tse2.mm.bing.net/th/id/OIP.PRvyHeR2eAZy7uyxjsDm0wHaED?rs=1&pid=ImgDetMain&o=7&rm=3" 
+             class="card-img-top img-fluid p-3 brand-logo" alt="Camel Appliances Logo">
+    <!-- Camel Electric Fan -->
+<div class="col-12">
+  <div class="d-flex content-center gap-2 flex-wrap">
+
+    <div>
+      <img src="https://tse4.mm.bing.net/th/id/OIP.RIDOXMc8pD6XmpSHTWo8jQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" 
+           alt="Camel Electric Fan 1" class="card">
+    </div>
+
+    <div>
+      <img src="https://cookmagazine.ph/wp-content/uploads/2020/02/Omnibus-copy.jpg" 
+           alt="Camel Electric Fan 2" class="card">
+    </div>
+
+    <div>
+      <img src="https://tse3.mm.bing.net/th/id/OIP.FPeRyX8_6iuOZDKk-YEHFAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" 
+           alt="Camel Electric Fan 3" class="card">
+    </div>
+
+    <div>
+      <img src="https://tse2.mm.bing.net/th/id/OIP.DCV_ZdA9AMfsV3pDYVbP_AHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" 
+           alt="Camel Electric Fan 4" class="card">
+    </div>
+
+  </div>
+</div>
+
+  </section>
+
+  <section id="kyowa" style="height:600px;">
+    <img src="https://kyowa.com.ph/wp-content/uploads/2025/08/kyowa.png" 
+             class="card-img-top img-fluid p-3 brand-logo" alt="Kyowa Logo">
+    <!-- Kyowa Blender -->
+<div class="col-12">
+  <div class="d-flex content-center gap-2 flex-wrap">
+
+    <div>
+      <img src="https://ph-test-11.slatic.net/p/e1086fdff339d1d509aa8efeac5ba07a.png" 
+           alt="Kyowa Blender 1" class="card">
+    </div>
+
+    <div>
+      <img src="https://lzd-img-global.slatic.net/g/p/c0d94fee201c4254208458d7f6f1bef6.png_720x720q80.png" 
+           alt="Kyowa Blender 2" class="card">
+    </div>
+
+    <div>
+      <img src="https://down-ph.img.susercontent.com/file/ph-11134207-7r98w-lsi5awbabgw4d9" 
+           alt="Kyowa Blender 3" class="card">
+    </div>
+
+    <div>
+      <img src="https://cf.shopee.ph/file/48c35a9b7843689e182d1f77606fc9ed" 
+           alt="Kyowa Blender 4" class="card">
+    </div>
+
+  </div>
+</div>
+
+  </section>
+</div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <div class="container">
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+        <li class="list-inline-item"><a href="about.html" class="text-white text-decoration-none">About</a></li>
+        <li class="list-inline-item"><a href="gallery.html" class="text-white text-decoration-none">Products</a></li>
+        <li class="list-inline-item"><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+      </ul>
+      <p class="mb-1">Developed by Shawn Kent S. Prades, Prince John Andrew T. Flores, Ericsson Pastores.</p>
+      <p class="mb-1">&copy; 2026 Jilmar Trading. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" 
+    crossorigin="anonymous"></script>
+
+  <!-- Navbar Scroll Animation -->
+  <script>
+    window.addEventListener("scroll", function() {
+      const navbar = document.querySelector(".animated-navbar");
+      if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
+  </script>
+  
+
+</body>
+</html>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
